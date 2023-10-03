@@ -1,0 +1,167 @@
+.logFormWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 18px 20px 18px;
+    gap: 32px;
+}
+
+.logHeadingBloc {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.logHeading {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.52px;
+    max-width: 316px;
+    color: #4f4f4f;
+}
+.logDescription {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    color: #4f4f4f;
+}
+
+.logForm {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.logFormInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.logIptGroup {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 48px;
+}
+.logIpt {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    color: #4f4f4f;
+    padding: 0px 18px 0px 53px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+}
+.logIpt:focus-within {
+    outline: none;
+}
+.logIpt:focus-visible {
+    outline: none;
+}
+.logIpt::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    color: #828282;
+}
+
+.logIptIcon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logIptIcon path {
+    fill: #828282;
+}
+
+.logBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 38px;
+    border-radius: 8px;
+    background-color: #2f80ed;
+    color: #fff;
+    border: none;
+}
+.logBtn:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.logSocialLog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+}
+.logSocialLogText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.07px;
+    color: #828282;
+}
+.logSocialLogLink {
+    color: #2d9cdb;
+    cursor: pointer;
+}
+.logSocialIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+}
+.logSocialIcon {
+    display: flex;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 180.81px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.69px;
+    color: #000;
+}
+
+.description {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17.71px;
+    color: #828282;
+}
+
+@media screen and (min-width: 768px) {
+    .logFormWrapper {
+        border: 1px solid #bdbdbd;
+        border-radius: 24px;
+        padding: 36px 44px;
+        width: 473px;
+    }
+    .header {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .logFormWrapper {
+        padding: 66px 58px;
+    }
+}
