@@ -68,10 +68,6 @@ const Profile = () => {
           <p>{bio ? bio : "I am a user"}</p>
         </div>
         <hr />
-        <div className="flex justify-between py-6">
-          <h1>Phone</h1>
-          <p>{user?.phoneNumber ? user?.phoneNumber : "Add phone number"}</p>
-        </div>
         <hr />
         <div className="flex justify-between py-6">
           <h1>Email</h1>

@@ -53,7 +53,15 @@ const page = () => {
             toast.error(error.message);
         }
     };
-    const handlePhoneNoChange = async (e) => { }
+    const handlePhoneNoChange = async (e) => {
+        e.preventDefault()
+        try {
+            await linkWithPhoneNumber(auth.currentUser, phone)
+            toast.success("Phone number added successfully.");
+        } catch (error) {
+            toast.error(error.message);
+        }
+    }
     const emailVerification = async (e) => {
         e.preventDefault()
         if (auth.currentUser.emailVerified == true) {
@@ -193,19 +201,6 @@ const page = () => {
                                     }
                                     rows={3}
                                 ></textarea>
-                            </div>
-                            <div className={styles.iptGroup}>
-                                <label className={styles.iptLabel} htmlFor="phone">
-                                    Phone
-                                </label>
-                                <input
-                                    className={styles.ipt}
-                                    id="phone"
-                                    type="tel"
-                                    value={phone}
-                                    onChange={(e) => setPhone(e.target.value)}
-                                    placeholder="Enter your phone..."
-                                />
                             </div>
                             {auth.currentUser.providerData[0].providerId == 'password' && (
                                 <>
